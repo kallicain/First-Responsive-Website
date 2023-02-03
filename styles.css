@@ -1,3 +1,94 @@
+* {
+  margin: 0;
+}
+
 body {
-  background-color: red;
+  display: grid;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 1fr;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Satisfy', cursive;
+  font-size: 35px;
+  background-color: #87a39F;
+}
+
+.one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.one-two-three {
+  display: flex;
+  flex-direction: row;
+  padding: 0% 15%;
+  justify-content: center;
+  background-color: #cdcfc4;
+}
+
+.block {
+  height: 25px;
+  width: 250px;
+  margin: 10px;
+  background-color: #f58d70;
+}
+
+.block-1 {
+  height: 25px;
+  width: 250px;
+  margin: 10px;
+  background-color: #e0a787;
+}
+
+.block-2 {
+  height: 25px;
+  width: 250px;
+  margin: 10px;
+  background-color: #eccdaf;
+}
+
+@media (max-width: 598px) {
+  .one-two-three {
+    flex-direction: column;
+    color: rgb(172, 170, 170);
+  }
+  .block {
+    background-color: #8da184;
+  }
+  .block-1 {
+    background-color: #748d9a;
+  }
+  .block-2 {
+    background-color: #c6d1d6;
+  }
+  .welcome {
+    background-color: #3c533c;
+  }
+  .one-two-three {
+    background-color: #1e2d21;
+  }
+  .welcome {
+    color: rgb(172, 170, 170);
+  }
 }
